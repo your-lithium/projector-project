@@ -1038,9 +1038,9 @@ def run():
     if st.button("Отримати передбачення"):
         mean_price = int(mean_prices['price'][mean_prices['mark'] == mark])
         if model == '':
-          model = pd.NA
+          model = np.nan
         if equipment == '':
-          equipment = pd.NA
+          equipment = np.nan
         features = [[mark, model, year, equipment, mileage, place,
                   description, accident, mean_price, engine_power]]
         data = {'mark': mark, 'model': model, 'year': year, 'equipment': equipment,
