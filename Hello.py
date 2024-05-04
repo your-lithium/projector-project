@@ -33,7 +33,6 @@ encoder_dict = {'mark': encoder_mark, 'model': encoder_model, 'equipment': encod
 
 features = ['mark', 'model', 'year', 'equipment', 'mileage', 'place',
                   'description', 'accident', 'mean_price', 'engine_power']
-nan = pd.NA
      
 
 def run():
@@ -1038,6 +1037,10 @@ def run():
 
     if st.button("Отримати передбачення"):
         mean_price = int(mean_prices['price'][mean_prices['mark'] == mark])
+        if model == '':
+          model = pd.NA
+        if equipment == '':
+          equipment = pd.NA
         features = [[mark, model, year, equipment, mileage, place,
                   description, accident, mean_price, engine_power]]
         data = {'mark': mark, 'model': model, 'year': year, 'equipment': equipment,
