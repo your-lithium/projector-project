@@ -43,7 +43,7 @@ def run():
 
     st.write("# привіт! \n # протестуйте модель для передбачення вартості авто :car:")
 
-    mark = st.selectbox('Марка', ['Opel', 'BMW', 'Hyundai', 'Audi', 'Mercedes-Benz', 'MG',
+    mark = st.selectbox('Марка', sorted(['Opel', 'BMW', 'Hyundai', 'Audi', 'Mercedes-Benz', 'MG',
        'Land Rover', 'Volkswagen', 'Tesla', 'Hyster', 'International',
        'Honda', 'JCB', 'Zeekr', 'Skoda', 'Mitsubishi', 'Toyota',
        'Renault', 'Mazda', 'Iveco', 'Peugeot', 'Kia', 'Lexus', 'Fiat',
@@ -169,8 +169,8 @@ def run():
        'Bartoletti', 'XGMA', 'Case Construction', 'ХТ', 'AM',
        'Energy Power', 'Orix', 'John Deere', 'Big dog', 'Sinotruk',
        'Boratas', 'Denago', 'Sinomach', 'Yamasaki', 'ЗИМ', 'Shaolin',
-       'Royal Enfield', 'Mirofret', 'Fleetwood'])
-    model = st.selectbox('Модель', ['Astra', 'X5', 'i40', '3 Series', 'A6', 'Q7', 'GL-Class', '4',
+       'Royal Enfield', 'Mirofret', 'Fleetwood']))
+    model = st.selectbox('Модель', sorted(['Astra', 'X5', 'i40', '3 Series', 'A6', 'Q7', 'GL-Class', '4',
        'Marvel R', 'Q5', 'Discovery', 'X6', 'Touareg', 'Sprinter',
        'Passat', 'Model 3', 'H 1.6 FT', 'IH', 'e-tron Sportback',
        'e-tron', 'GL 1800 Gold Wing', '535-125', 'R nineT', '001',
@@ -773,9 +773,9 @@ def run():
        'Fukang ES600', 'EF', 'NS34KT', 'JJ', 'V-Rod', '690', '14 Чайка',
        'Fairlane', 'SLG', 'Ninja 300', 'MT 125-2B', '14.264', 'Z 250SL',
        '14.285', 'SX 125', 'Aquila 650', 'R 1100R', 'Mirofret', 'Niagara',
-       '65711', '12.220', '527-58', '5335'])
+       '65711', '12.220', '527-58', '5335']))
     year = st.number_input('Рік', 1900)
-    equipment = st.selectbox('Специфікація', ['Base', None, 'M Package', 'S-line', 'Premium', 'AMG Package',
+    equipment = st.selectbox('Специфікація', sorted(['Base', None, 'M Package', 'S-line', 'Premium', 'AMG Package',
        'S-Line', 'Elegance', 'Prestige', 'Style', 'Invite', 'L&K', 'Pro',
        'Pure+', 'Prestige+', 'Individual', 'Premium+', 'Allure', 'Style+',
        'Comfortline', 'R Line', 'Sport&Style', 'Luxury+', 'Prime',
@@ -898,9 +898,9 @@ def run():
        'E-environment version', 'Track &amp; Style', 'JCW', 'Sol +',
        'Acenta Safety+Navi', 'Luxury VIP5', 'Inform', 'LT1',
        'Premium+NAVI', 'Optima', 'Trace Life', 'Combi Elegant', 'SK9ALFL',
-       'Shine Pack', 'GS Trophy', 'Sport  S11', 'Soft Top'])
+       'Shine Pack', 'GS Trophy', 'Sport  S11', 'Soft Top']))
     mileage = st.number_input('Пробіг', 0)
-    place = st.selectbox('Місто', ['  Одеса', '  Кривий Ріг', '  Канів', '  Запоріжжя', '  Київ',
+    place = st.selectbox('Місто', sorted(['  Одеса', '  Кривий Ріг', '  Канів', '  Запоріжжя', '  Київ',
        '  Львів', '  Полтава', '  Рівне', '  Херсон', '  Черкаси',
        '  Івано-Франківськ', '  Дніпро (Дніпропетровськ)', '  Луцьк',
        '  Миколаїв', '  Хмельницький', '  Чернівці', '  Вінниця',
@@ -1030,7 +1030,7 @@ def run():
        '  Катюжанка', '  Нововоронцовка', '  Буди', '  Мала Данилівка',
        '  Старобільськ', '  Іршанськ', '  Каховка', '  Краснопавлівка',
        '  Високопілля', '  Генічеськ', '  Середина-Буда', '  Солоницівка',
-       '  Бабаї', '  Слобожанське (Ювілейне)'])
+       '  Бабаї', '  Слобожанське (Ювілейне)']))
     description = st.checkbox('Є опис')
     accident = st.checkbox('Був у аварії')
     engine_power = st.number_input('Кількість к.с.', 0)
