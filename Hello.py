@@ -33,7 +33,7 @@ encoder_dict = {'mark': encoder_mark, 'model': encoder_model, 'equipment': encod
 
 features = ['mark', 'model', 'year', 'equipment', 'mileage', 'place',
                   'description', 'accident', 'mean_price', 'engine_power']
-nan = np.nan
+nan = pd.NA
      
 
 def run():
