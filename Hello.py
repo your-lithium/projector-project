@@ -33,6 +33,7 @@ encoder_dict = {'mark': encoder_mark, 'model': encoder_model, 'equipment': encod
 
 features = ['mark', 'model', 'year', 'equipment', 'mileage', 'place',
                   'description', 'accident', 'mean_price', 'engine_power']
+nan = None
      
 
 def run():
@@ -170,7 +171,7 @@ def run():
        'Energy Power', 'Orix', 'John Deere', 'Big dog', 'Sinotruk',
        'Boratas', 'Denago', 'Sinomach', 'Yamasaki', 'ЗИМ', 'Shaolin',
        'Royal Enfield', 'Mirofret', 'Fleetwood']))
-    model = st.selectbox('Модель', [None] + sorted(['Astra', 'X5', 'i40', '3 Series', 'A6', 'Q7', 'GL-Class', '4',
+    model = st.selectbox('Модель', [nan] + sorted(['Astra', 'X5', 'i40', '3 Series', 'A6', 'Q7', 'GL-Class', '4',
        'Marvel R', 'Q5', 'Discovery', 'X6', 'Touareg', 'Sprinter',
        'Passat', 'Model 3', 'H 1.6 FT', 'IH', 'e-tron Sportback',
        'e-tron', 'GL 1800 Gold Wing', '535-125', 'R nineT', '001',
@@ -775,7 +776,7 @@ def run():
        '14.285', 'SX 125', 'Aquila 650', 'R 1100R', 'Mirofret', 'Niagara',
        '65711', '12.220', '527-58', '5335']))
     year = st.number_input('Рік', 1900)
-    equipment = st.selectbox('Специфікація', [None] + sorted(['Base', 'M Package', 'S-line', 'Premium', 'AMG Package',
+    equipment = st.selectbox('Специфікація', [nan] + sorted(['Base', 'M Package', 'S-line', 'Premium', 'AMG Package',
        'S-Line', 'Elegance', 'Prestige', 'Style', 'Invite', 'L&K', 'Pro',
        'Pure+', 'Prestige+', 'Individual', 'Premium+', 'Allure', 'Style+',
        'Comfortline', 'R Line', 'Sport&Style', 'Luxury+', 'Prime',
