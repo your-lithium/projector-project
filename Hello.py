@@ -170,7 +170,7 @@ def run():
        'Energy Power', 'Orix', 'John Deere', 'Big dog', 'Sinotruk',
        'Boratas', 'Denago', 'Sinomach', 'Yamasaki', 'ЗИМ', 'Shaolin',
        'Royal Enfield', 'Mirofret', 'Fleetwood']))
-    model = st.selectbox('Модель', ['Astra', 'X5', 'i40', '3 Series', 'A6', 'Q7', 'GL-Class', '4',
+    model = st.selectbox('Модель', [None] + ['Astra', 'X5', 'i40', '3 Series', 'A6', 'Q7', 'GL-Class', '4',
        'Marvel R', 'Q5', 'Discovery', 'X6', 'Touareg', 'Sprinter',
        'Passat', 'Model 3', 'H 1.6 FT', 'IH', 'e-tron Sportback',
        'e-tron', 'GL 1800 Gold Wing', '535-125', 'R nineT', '001',
@@ -377,7 +377,7 @@ def run():
        'RXT-X', 'KIS 3W-S', '31512', 'S 1000R', 'IQ', 'Agila', 'StreetKa',
        'CRF 300L', 'Traverse', 'Safrane', 'V60 Cross Country',
        'Continental', 'RS6', 'CRF 250L', 'Super Salon', 'B12', 'Suburban',
-       '33', 'VTX 1800R', 'BPW eco', 'C3 Aircross', None, 'NC 700S', '914',
+       '33', 'VTX 1800R', 'BPW eco', 'C3 Aircross', 'NC 700S', '914',
        'Puma', 'Navigator', '1982', 'SMFF', 'LE 8.150', 'Kandi EX3',
        'SPC', 'JC', 'Fazer', 'ZX 9R', 'CTS', 'ESE', 'GT 250R', 'FX',
        'R 500', 'XCT 25', 'S 450', '300C', 'Impreza WRX STI', 'Dashing',
@@ -775,7 +775,7 @@ def run():
        '14.285', 'SX 125', 'Aquila 650', 'R 1100R', 'Mirofret', 'Niagara',
        '65711', '12.220', '527-58', '5335'].sort())
     year = st.number_input('Рік', 1900)
-    equipment = st.selectbox('Специфікація', sorted(['Base', None, 'M Package', 'S-line', 'Premium', 'AMG Package',
+    equipment = st.selectbox('Специфікація', [None] + sorted(['Base', 'M Package', 'S-line', 'Premium', 'AMG Package',
        'S-Line', 'Elegance', 'Prestige', 'Style', 'Invite', 'L&K', 'Pro',
        'Pure+', 'Prestige+', 'Individual', 'Premium+', 'Allure', 'Style+',
        'Comfortline', 'R Line', 'Sport&Style', 'Luxury+', 'Prime',
