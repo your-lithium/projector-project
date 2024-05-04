@@ -170,7 +170,7 @@ def run():
        'Energy Power', 'Orix', 'John Deere', 'Big dog', 'Sinotruk',
        'Boratas', 'Denago', 'Sinomach', 'Yamasaki', 'ЗИМ', 'Shaolin',
        'Royal Enfield', 'Mirofret', 'Fleetwood']))
-    model = st.selectbox('Модель', sorted(['Astra', 'X5', 'i40', '3 Series', 'A6', 'Q7', 'GL-Class', '4',
+    model = st.selectbox('Модель', ['Astra', 'X5', 'i40', '3 Series', 'A6', 'Q7', 'GL-Class', '4',
        'Marvel R', 'Q5', 'Discovery', 'X6', 'Touareg', 'Sprinter',
        'Passat', 'Model 3', 'H 1.6 FT', 'IH', 'e-tron Sportback',
        'e-tron', 'GL 1800 Gold Wing', '535-125', 'R nineT', '001',
@@ -773,7 +773,7 @@ def run():
        'Fukang ES600', 'EF', 'NS34KT', 'JJ', 'V-Rod', '690', '14 Чайка',
        'Fairlane', 'SLG', 'Ninja 300', 'MT 125-2B', '14.264', 'Z 250SL',
        '14.285', 'SX 125', 'Aquila 650', 'R 1100R', 'Mirofret', 'Niagara',
-       '65711', '12.220', '527-58', '5335']))
+       '65711', '12.220', '527-58', '5335'].sort())
     year = st.number_input('Рік', 1900)
     equipment = st.selectbox('Специфікація', sorted(['Base', None, 'M Package', 'S-line', 'Premium', 'AMG Package',
        'S-Line', 'Elegance', 'Prestige', 'Style', 'Invite', 'L&K', 'Pro',
