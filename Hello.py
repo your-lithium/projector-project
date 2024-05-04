@@ -1038,9 +1038,9 @@ def run():
     if st.button("Отримати передбачення"):
         mean_price = int(mean_prices['price'][mean_prices['mark'] == mark])
         if model == '':
-          model = None
+          model = 'missing'
         if equipment == '':
-          equipment = None
+          equipment = 'missing'
         features = [[mark, model, year, equipment, mileage, place,
                   description, accident, mean_price, engine_power]]
         data = {'mark': mark, 'model': model, 'year': year, 'equipment': equipment,
@@ -1050,7 +1050,8 @@ def run():
         df=pd.DataFrame([list(data.values())], columns=['mark', 'model', 'year', 'equipment', 'mileage', 'place',
                   'description', 'accident', 'mean_price', 'engine_power'])
 
-        df = df.applymap(lambda x: np.nan if x is None else x)
+        df.loc[df['model'] == 'missing', 'model'] = np.nan
+        df.loc[df['equipment'] == 'missing', 'equipment'] = np.nan
 
         category_col = ['mark', 'model', 'equipment', 'place']
         for cat, enc in encoder_dict.items():
