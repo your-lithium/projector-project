@@ -1,7 +1,5 @@
-# Welcome to streamlit
+# Hi! 🚗
 
-This is the app you get when you run `streamlit hello`, extracted as its own app.
+This is my project on predicting cars' value on auto.ria
 
-Edit [Hello.py](./Hello.py) to customize this app to your heart's desire. ❤️
-
-Check it out on [Streamlit Community Cloud](https://st-hello-app.streamlit.app/)
+You can test it on https://projectorproject-lithium.streamlit.app/ !
