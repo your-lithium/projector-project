@@ -1050,7 +1050,7 @@ def run():
         df=pd.DataFrame([list(data.values())], columns=['mark', 'model', 'year', 'equipment', 'mileage', 'place',
                   'description', 'accident', 'mean_price', 'engine_power'])
 
-      df = df.applymap(lambda x: np.nan if x is None else x)
+        df = df.applymap(lambda x: np.nan if x is None else x)
 
         category_col = ['mark', 'model', 'equipment', 'place']
         for cat, enc in encoder_dict.items():
