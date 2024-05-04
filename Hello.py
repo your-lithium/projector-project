@@ -1046,8 +1046,9 @@ def run():
         data = {'mark': mark, 'model': model, 'year': year, 'equipment': equipment,
                 'mileage': mileage, 'place': place, 'description': description,
                 'accident': accident, 'mean_price': mean_price, 'engine_power': float(engine_power)}
-        print(data)
-        df=pd.DataFrame([list(data.values())], columns=['mark', 'model', 'year', 'equipment', 'mileage', 'place',
+
+        data_values = [value if value is not None else np.nan for value in data.values()]
+        df=pd.DataFrame([data_values], columns=['mark', 'model', 'year', 'equipment', 'mileage', 'place',
                   'description', 'accident', 'mean_price', 'engine_power'])
         
 
